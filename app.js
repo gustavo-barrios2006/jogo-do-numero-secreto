@@ -1,6 +1,6 @@
-function exibirMensagemInicial()
+    function exibirMensagemInicial()
 {
-exibirTextoNaTela("h1", "Jogo de adivinhação");
+exibirTextoNaTela("h1", "Jogo de adivinhaï¿½ï¿½o");
 exibirTextoNaTela("p", "Digite um nï¿½mero de 0 a 10");
 }
 let listaDeNumerosSorteados=[];
@@ -19,19 +19,19 @@ let chute=document.querySelector("input").value;
 if(chute==numeroSecreto)
 {
 exibirTextoNaTela("h1", "Acertou!");
-let mensagemTentativas="Você acertou o número secreto com ${tentativas} ${tentativas==1?"tentativa":"tentativas"}`);
+let mensagemTentativas="Vocï¿½ acertou o nï¿½mero secreto com ${tentativas} ${tentativas==1?"tentativa":"tentativas"}`);
 exibirNumeroNaTela("p", mensagemTentativas);
 document.getElementById("reiniciar").removeAttribute("disable");
 }
 else
 if(chute>numeroSecreto)
 {
-exibirTextoNaTela("p", "O número secreto é maior");
+exibirTextoNaTela("p", "O nï¿½mero secreto ï¿½ maior");
 limparCampo();
 }
 else
 {
-exibirTextoNaTela("p", "O número secreto é menor");
+exibirTextoNaTela("p", "O nï¿½mero secreto ï¿½ menor");
 limparCampo();
 }
 tentativas++;
