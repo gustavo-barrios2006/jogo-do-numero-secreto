@@ -1,4 +1,4 @@
-    function exibirMensagemInicial()
+            |   function exibirMensagemInicial()
 {
 exibirTextoNaTela("h1", "Jogo de adivinha��o");
 exibirTextoNaTela("p", "Digite um n�mero de 0 a 10");
@@ -38,7 +38,7 @@ tentativas++;
 }
 function gerarNumeroAleatorio()
 {
-let  numeroEscolhido=parseInt(Math.random()*10)+1;
+let  numeroEscolhido=parseInt(Math.random()*100)+1;
 if(listaDeNumerosSorteados.includes(numeroEscolhido))
 {
 return gerarNumeroAleatorio();
